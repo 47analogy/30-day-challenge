@@ -136,7 +136,7 @@ section,
 aside,
 footer {
   margin: 0;
-  padding: rem-calc(20);
+  padding: 20px;
   border: 1px solid black;
   color: gray;
 }
@@ -145,22 +145,48 @@ main {
   background: red;
 }
 
+.wrapper {
+  margin: auto;
+  max-width: 1400px;
+}
+
 .header {
   background: purple;
+  height: 350px;
 }
 
 .hero {
   background: orange;
+  height: 300px;
 }
 
 .content {
   background: green;
+  height: 700px;
 }
 
 .sidebar {
   background: yellow;
+  height: 700px;
 }
 
 .footer {
   background: blue;
+  height: 200px;
+}
+
+/* media queries */
+@media (min-width: 500px) {
+  .flex-container {
+    border: 3px solid blue;
+    display: flex;
+  }
+
+  .content {
+    flex: 1;
+  }
+
+  .sidebar {
+    flex: 0 1 300px;
+  }
 }
