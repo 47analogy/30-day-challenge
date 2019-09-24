@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { addPost } from '../actions';
 
 class AddPost extends Component {
   state = {
@@ -49,4 +51,15 @@ class AddPost extends Component {
   }
 }
 
-export default AddPost;
+const mapDispatchToProps = dispatch => {
+  return {
+    onAddPost: post => {
+      dispatch(addPost(post));
+    },
+  };
+};
+
+export default connect(
+  null,
+  mapDispatchToProps,
+)(AddPost);
