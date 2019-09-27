@@ -1,0 +1,46 @@
+body {
+  background-image: url('images/bg-pattern-desktop.svg');
+}
+
+.container {
+  height: 1000px;
+}
+
+.wrapper {
+  margin: auto;
+  max-width: 1400px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.image-logo {
+  margin-top: 70px;
+}
+
+.cta {
+  font-family: Josefin Sans;
+  font-size: 70px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  margin-top: 120px;
+}
+
+.left-parent {
+  width: 700px;
+  display: flex;
+  justify-content: center;
+}
+
+.feature-text {
+  margin-top: 40px;
+  color: #ce9797;
+  font-size: 16px;
+}
+
+.feature-email {
+  margin-top: 70px;
+}
