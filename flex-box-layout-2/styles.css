@@ -128,33 +128,51 @@ table {
   border-spacing: 0;
 }
 main {
-  border: 1px solid yellow;
   max-width: 1200px;
   margin: auto;
 }
 .header {
-  border: 1px solid black;
+  height: 150px;
+  margin: 40px 0;
+  background: dodgerblue;
 }
 .content {
-  border: 1px solid red;
+  height: 800px;
+  display: flex;
+  justify-content: space-between;
+}
+.content-area {
+  display: flex;
+  flex-direction: column;
 }
 .box {
-  border: 1px solid blue;
+  display: flex;
 }
 .box .box-1 {
-  border: 1px solid green;
+  height: 300px;
+  width: 410px;
+  background: green;
 }
 .box .box-2 {
-  border: 1px solid orange;
+  height: 300px;
+  width: 410px;
+  margin-left: 30px;
+  background: orange;
 }
 .main-content {
-  border: 1px solid gray;
+  height: 500px;
+  width: 855px;
+  margin-top: 40px;
+  background: red;
 }
 .sidebar {
-  border: 1px solid pink;
+  width: 250px;
+  background: blue;
 }
 .footer {
-  border: 1px solid purple;
+  height: 70px;
+  margin: 40px 0;
+  background: purple;
 }
 
 /* media queries */
