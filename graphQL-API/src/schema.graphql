@@ -1,0 +1,21 @@
+
+type Query {
+    players: [Player]!
+}
+
+
+type Player {
+    id: ID!,
+    name: String!,
+    team: String!,
+    position: String!,
+    number: Int!
+}
+
+type Mutation {
+   createPlayer(name: String!, 
+   team: String!,
+   position: String!, 
+   number: Int!): Player!
+}
+

@@ -1,0 +1,11 @@
+# HTTP Endpoint
+#endpoint: ''
+endpoint: https://us1.prisma.sh/actweed47-e4a2b7/baseball-players/dev
+
+# points to location of the datamodel file
+datamodel: datamodel.prisma
+
+# specify the language and location of the Prisma Client
+generate:
+  - generator: javascript-client
+    output: ../src/generated/prisma-client

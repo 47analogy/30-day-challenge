@@ -1,0 +1,8 @@
+type Player {
+    id: ID! @id
+    name: String!
+    team: String!
+    position: String!
+    number: Int!
+}
+
